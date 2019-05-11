@@ -1,6 +1,6 @@
 # 实现目标
 
-将ftp内容下载到本地，同步到onedrive
+将ftp内容下载到本地，同步到onedrive，并且实现登录网站无需登录即可下载
 
 # 步骤
 
@@ -23,6 +23,10 @@ crontab -e
 ```shell
 crontab -e
 #每天早上8点20执行脚本
-20 08 * * * /usr/local/bin/onedrive-d ./ppt
+20 08 * * * /usr/local/bin/onedrive-d /home/cc/ppt
 ```
+
+## onedrive第三方客户端
+
+**https://hub.docker.com/r/setzero/oneindex**
 
