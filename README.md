@@ -16,14 +16,16 @@ crontab -e
 
 ## 将ftp内容同步到onedrive
 
-**https://github.com/0oVicero0/OneDrive**
+**https://github.com/abraunegg/onedrive**
+
+**https://www.moerats.com/archives/740/**
 
 定时任务
 
 ```shell
 crontab -e
 #每天早上8点20执行脚本
-20 08 * * * /usr/local/bin/onedrive-d /home/cc/ppt
+20 08 * * * onedrive --synchronize --single-directory /home/cc/ppt
 ```
 
 ## onedrive第三方客户端
