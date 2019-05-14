@@ -4,6 +4,19 @@
 
 # 步骤
 
+## 依赖
+
+确保系统已经安装`lftp`以及`ftp`
+
+lftp的配置
+
+```shell
+# vim /etc/lftp.conf
+set ftp:charset gbk
+set file:charset utf8
+set ftp:passive-mode 0 #0代表不用被动模式
+```
+
 ## 下载back.sh
 
 此脚本可以将ftp特定的内容下载到本地。可配合定时任务使用
@@ -25,6 +38,7 @@ crontab -e
 ```shell
 crontab -e
 #每天早上8点20执行脚本
+/home/cc/back.sh
 20 08 * * * onedrive --synchronize --single-directory /home/cc/ppt
 ```
 
