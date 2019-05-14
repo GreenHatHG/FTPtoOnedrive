@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 echo "Script start at $(date)" #显示脚本开始执行的时间
 HOST=10.5.1.5 #ftp服务器地址
 USER=('we' 'wang' 'robert' 'liuaimin' 'wangfang') #用户名
